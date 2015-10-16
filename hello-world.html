@@ -1,62 +1,104 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cory Ginsberg.</title>
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <a class="navbar-brand" href="#"><span><img src="media/personal_logo.svg" id="brand" alt=""/></span>Cory Ginsberg.</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="highlight">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="#">BLOG</a></li> 
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="welcome-div shadow">
+          <h1>Hi,<br>I'm <strong>Cory Ginsberg.</strong></h1>
+          <h3><em>Front-end developer from Chicago, IL.</em></h3>
+          <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: right;" href="#">Resume</a></h4></div>
+          <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: left;" href="#">Contact</a></h4></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="no-background-div text-center">
+          <h1>About <strong>Me.</strong></h1>
+          <h4>My interest in programming started when I was young. I convinced my parents to get me an iPod Touch when I was just 12 years old, and I made my first app when I was just 15. Since then, I have been learning and writing great, clean code for myself and for clients alike.</h4>
+          <h4><a href="about.html" class="btn btn-no-outline">See More &rsaquo;</a></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="portfolio.html">
+            <div class="portfolio-div shadow grow">
+              <h1>My <strong>Portfolio.</strong></h1>
+              <h3><em>See all that I've made.</em></h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <a href="#">
+          <div class="blog-div">
+            <h1>My <strong>Blog.</strong></h1>
+          </div>
+        </a>
+      </div>	
+      
+      <!-- Footer -->
+      <div class="row col-sm-12">
+        <div class="text-center">
+          <h1><span><img src="media/personal_logo.svg" style="width:125px" alt=""></span>Cory Ginsberg.</h1>
+          <h3>Follow me on Twitter <u><a href="http://twitter.com/cory_ginsberg">@Cory_Ginsberg</a></u>.</h3>
+          <h3>Contact me at <u><a href="mailto:me@coryginsberg.com">me@coryginsberg.com</a></u>.</h3>
+          <h3>Download my resume <u><a href="#">here</a></u>.</h3>
+          <div id="legal">
+            <p style="float:left"><u><a href="index.html">Home</a></u> | <u><a href="#">Site Map</a></u> | <u><a href="about.html">About</a></u></p>
+            <p style="float:right">Copyright &copy; 2015 Cory Ginsberg.</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-1.11.2.min.js"></script>
 
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-</style>
-</head>
-
-<body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
-
-</body>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
+
