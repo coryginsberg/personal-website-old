@@ -22,7 +22,7 @@
   </head>
   
   <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Cory Ginsberg.</a>
+          <a class="navbar-brand center-container" href="index.html"><img class="top-logo" src="media/personal_logo.svg" alt=""></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -46,11 +46,13 @@
     </nav><!-- /.navbar -->
     <div class="container-fluid">
       <div class="row">
-        <div class="welcome-div shadow">
+        <div class="welcome-div shadow text-center align-container">
           <h1>Hi,<br>I'm <strong>Cory Ginsberg.</strong></h1>
           <h3><em>Front-end developer from Chicago, IL.</em></h3>
-          <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: right;" href="#">Resume</a></h4></div>
-          <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: left;" href="#">Contact</a></h4></div>
+          <div> <!-- This div is used to allow the two buttons to be in the same column in the flexbox used to center the welcome-div -->
+            <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: right;" href="#">Resume</a></h4></div>
+            <div class="col-sm-6"><h4><a class="btn raised btn-default shadow" style="float: left;" href="#">Contact</a></h4></div>
+          </div>
         </div>
       </div>
     </div>
