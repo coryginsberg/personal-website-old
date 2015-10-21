@@ -30,6 +30,17 @@ h3 {
   font-weight: 500;
   line-height: 35px;
 }
+
+h4 {
+  font-family: system, 'Segoe UI', -apple-system, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font: -apple-system-subheadline;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
 p {
   font-family: system, 'Segoe UI', -apple-system, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
   font: -apple-system-body;
@@ -37,7 +48,7 @@ p {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 26px;
 }
 blockquote {
   font-family: system, 'Segoe UI', -apple-system, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -54,6 +65,15 @@ pre {
   font-variant: normal;
   font-weight: 400;
   line-height: 25px;
+}
+
+.welcome-name {
+  font-size: 85px;
+  line-height: 90px;
+}
+
+.welcome-subname {
+  line-height:74px;
 }
 
 .welcome-quote {
@@ -91,8 +111,9 @@ u:hover {
   background-color:transparent;
 }
 
-.top-logo {
-  height: 35px;
+.logo {
+  height:40px;
+  margin-top:-10px;
 }
 
 .btn {
@@ -177,6 +198,8 @@ u:hover {
   color:white;
   	
 	border-radius:0;
+
+  margin-top:-20px;
 }
 
 .no-background-div {
@@ -196,10 +219,10 @@ u:hover {
 	position:relative;
   height:400px;
   color:white;
-  
-	margin-top:10px;
-	
+  	
 	overflow:hidden;
+
+
 }
 
 .blog-div {
