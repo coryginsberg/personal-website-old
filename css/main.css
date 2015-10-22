@@ -227,6 +227,10 @@ u:hover {
 
 /* Main Page Divs */
 
+.div-padding {
+  margin-top:30px;
+}
+
 .portfolio-div {
 	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/Computer-Programming-Sucks.jpg');
   background-size:cover;
@@ -236,7 +240,6 @@ u:hover {
   color:white;
   	
 	overflow:hidden;
-
 
 }
 
@@ -257,9 +260,7 @@ u:hover {
 	position:relative;
   height:400px;
   color:white;
-  
-	margin-top:30px;
-	
+  	
 	overflow:hidden;
 
 }
@@ -271,9 +272,7 @@ u:hover {
 	position:relative;
   height:400px;
   color:white;
-  
-	margin-top:30px;
-	
+  	
 	overflow:hidden;
 	
 }
@@ -285,9 +284,7 @@ u:hover {
 	position:relative;
   height:400px;
   color:white;
-  
-	margin-top:30px;
-	
+  	
 	overflow:hidden;
 	
 
@@ -300,9 +297,7 @@ u:hover {
 	position:relative;
   height:400px;
   color:white;
-  
-	margin-top:30px;
-	
+  	
 	overflow:hidden;
 	
 }
