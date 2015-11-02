@@ -13,6 +13,7 @@ body {
 .navbar {
     border-radius: 0;
     border-color: transparent;
+    position: fixed;
 }
 
 h1 {
