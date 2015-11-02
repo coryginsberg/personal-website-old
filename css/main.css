@@ -2,360 +2,307 @@
 /* CSS Document */
 html,
 body {
-	background-color:#F2F2F2;
-	
-	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #F2F2F2;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  overflow-x: hidden; /* Prevent horizontal scroll on narrow devices */
-  font-smooth: always;
-  transform: rotate(-0.0000000001deg)
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; /* Prevent horizontal scroll on narrow devices */
+    transform: rotate(-0.0000000001deg)
 }
 
 .navbar {
-  border-radius: 0;
-  border-color:transparent;
+    border-radius: 0;
+    border-color: transparent;
 }
 
 h1 {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font: -apple-system-headline;
-  font-size: 48px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 52px;
+    font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 52px;
 }
 
 h3 {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font: -apple-system-subheadline;
-  font-size: 28px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 35px;
+    font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 35px;
 }
 
 h4 {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font: -apple-system-subheadline;
-  font-size: 20px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 28px;
+    font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 28px;
 }
 
 p {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 26px;
+    font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 blockquote {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 25px;
-}
-pre {
-  font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 25px;
+    font-family: 'Segoe UI', -apple-system, Ubuntu, Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .welcome-name {
-  font-size: 85px;
-  line-height: 90px;
+    font-size: 85px;
+    line-height: 90px;
 }
 
 .welcome-subname {
-  line-height:74px;
+    line-height: 74px;
 }
 
 .welcome-quote {
-	padding-left:100px;
-  padding-right:100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-@media(max-width: 770px) {
-  .welcome-quote {
-    padding-left:50px;
-    padding-right:50px;
-  }
+@media (max-width: 770px) {
+    .welcome-quote {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 strong {
-  color:#CE2020;
-  font-weight: inherit;
+    color: #CE2020;
+    font-weight: inherit;
 }
 
 a {
-  color:inherit;
-	background-color:transparent;
+    color: inherit;
+    background-color: transparent;
 }
 
 a:hover, a:focus {
-	color:#CE2020;
-	text-decoration:none;
-	background-color:transparent;
-}
-
-.highlight {
-	color:#CE2020;
+    color: #CE2020;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 u {
-  text-decoration:none;
-  border-bottom:1px solid white;
-}​
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
 
 u:hover {
-  color:#CE2020;
-  text-decoration:none;
-  background-color:transparent;
+    color: #CE2020;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .logo {
-  height:40px;
-  margin-top:-10px;
+    height: 40px;
+    margin-top: -10px;
 }
 
 .btn {
-  font-size:1em;
-  border-radius:4px;
-  border-color:transparent;
-  color:white;
-  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+    font-size: 1em;
+    border-radius: 4px;
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .btn.raised, .btn:focus {
-  background-color:#CE2020;
-  border-color:transparent;
+    background-color: #CE2020;
+    border-color: transparent;
 }
 
 .btn:hover {
-  border-color:transparent;
-  background-color:rgba(211,47,47,1.0);
-  
-  transition:box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay:0.02s;
-  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    border-color: transparent;
+    background-color: rgba(211, 47, 47, 1.0);
+
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.02s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .btn:active {
-  border-color:transparent;
-  background-color:rgba(244,67,54,1.0);
-  
-  transition:box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay:0.02s;
-  box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.30);
+    border-color: transparent;
+    background-color: rgba(244, 67, 54, 1.0);
+
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.02s;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.30);
 }
 
 .btn.raised:active {
-  background-color:rgba(244,67,54,1.0);
-  border-color:transparent;
+    background-color: rgba(244, 67, 54, 1.0);
+    border-color: transparent;
 }
 
 .shadow {
 }
 
 .btn-no-outline {
-  text-align:center;
-  color:black;
-  box-shadow:0 0 0 0 rgba(0,0,0,0);
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 
 }
 
 .btn-no-outline:hover {
-  background-color:rgba(204,204,204,0.15);
+    background-color: rgba(204, 204, 204, 0.15);
 }
 
 .btn-no-outline:focus {
-  background-color:rgba(204,204,204,0.25)
-}
-
-.div-info-text {
-	margin:0;
-	width:100%;
-	position:absolute;
-  bottom:0;
-  left:0;
-	padding:16px;
-	background-color:rgba(0,0,0,0.5);
+    background-color: rgba(204, 204, 204, 0.25)
 }
 
 .align-container {
-  /* Centers the text/buttons in the div vertially and horizontally */
-  display: flex;
-  flex-direction:column;
-  flex-flow:column;
-  align-items: center;
-  justify-content: center;
+    /* Centers the text/buttons in the div vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.section.active {}
+.section.active {
+}
 
 .welcome-div {
-  background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/welcome_bg.png');
-  background-size:cover;
-  background-position:center;
-  height:500px;
-  color:white;
-  	
-	border-radius:0;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/welcome_bg.png') center;
+    background-size: cover;
+    height: 500px;
+    color: white;
 
-  margin-top:-20px;
+    border-radius: 0;
+
+    margin-top: -20px;
 }
 
 .no-background-div {
-  min-height:350px;
-  margin:auto;
-  padding-right:100px;
-  padding-left:100px;
-  position:relative;
+    min-height: 350px;
+    margin: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
 }
 
-/* Main Page Divs */
-
 .div-padding {
-  margin-top:30px;
+    margin-top: 30px;
 }
 
 .portfolio-div {
-	background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg');
-  background-size:cover;
-  background-position:center;
-	position:relative;
-  height:400px;
-  color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: white;
 
-	overflow:hidden;
+    overflow: hidden;
 
 }
-
-.blog-div {
-  min-height:50em;
-  max-width:700px;
-  margin:auto;
-  position:relative;
-}
-
-/* About Page Divs */
 
 .schools-div {
-  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/DePaul_University.jpg');
-  background-size:cover;
-  background-position:center;
-	position:relative;
-  height:400px;
-  color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/DePaul_University.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: white;
 
-	overflow:hidden;
+    overflow: hidden;
 
 }
 
 .languages-div {
-  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg');
-  background-size:cover;
-  background-position:center;
-	position:relative;
-  height:400px;
-  color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: white;
 
-	overflow:hidden;
-	
+    overflow: hidden;
+
 }
 
 .hobbies-div {
-  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/swimming.png');
-  background-size:cover;
-  background-position:center;
-	position:relative;
-  height:400px;
-  color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/swimming.png') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: white;
 
-	overflow:hidden;
+    overflow: hidden;
 
 }
 
 .inspirations-div {
-  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Steve Jobs.png');
-  background-size:cover;
-  background-position:center;
-	position:relative;
-  height:400px;
-  color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Steve Jobs.png') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: white;
 
-	overflow:hidden;
-	
+    overflow: hidden;
+
 }
 
 .hover {
-  transition:all .1s ease-in-out;
-  overflow: hidden;
+    transition: all .1s ease-in-out;
+    overflow: hidden;
 
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: transparent;
+    outline: transparent solid 2px;
 
-  border-color: transparent;
-  border-width: 2px;
-  border-style: solid;
+    border: 2px solid transparent;
 }
 
-.hover:hover{
-	opacity: 1;
+.hover:hover {
+    opacity: 1;
 
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #CCC;
+    outline: #CCC solid 2px;
 
-  border-color: #FFF;
-  border-width: 2px;
-  border-style: solid;
+    border: 2px solid #FFF;
 
-  background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 
-} 
+}
 
 .hover:after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  -moz-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  top: 0;
-  left: 0;
-  position: absolute;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -o-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+    background: -ms-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+    background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .hover:hover:after {
-  opacity: 1;
+    opacity: 1;
 }
 
 .hover h1, h2, h3, h4, h5, p {
-  z-index: 1;
-  position: relative;
+    z-index: 1;
+    position: relative;
 }
