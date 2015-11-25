@@ -21,6 +21,13 @@ body {
     border-color: transparent;
 }
 
+.navbar-brand > img {
+    max-height: 200%;
+    height: 200%;
+    width: auto;
+    margin: -10px auto;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 48px;
