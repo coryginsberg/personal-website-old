@@ -1,3 +1,7 @@
+
+```
+#!python
+
 ##%                                                                         %##
 ######%                                                                 %######
 ##########%                                                         ###########
@@ -33,5 +37,7 @@
                                ####    %#######%                               
                                        %####                                   
 
+
+```
 
 This is the BitBucket Git source for my personal website -- currently under construction.
