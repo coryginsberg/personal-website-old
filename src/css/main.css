@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic); /* TODO: Find out why the URL is throwing an error */
 /* CSS Document */
 html,
 body {
@@ -11,6 +10,10 @@ body {
     -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit (possibly Edge as well, as Edge uses some webkit prefixes)*/
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
     transform: rotate(-0.0000000001deg) /* Gives the font a slight CSS3 tilt to rotate jagged edges away from pixels. Used for 'cheating' Anti-Aliasing on Windows. */
+}
+
+body {
+    padding-top: 50px;
 }
 
 .navbar {
@@ -54,6 +57,24 @@ h4 {
     line-height: 28px;
 }
 
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -86,7 +107,7 @@ blockquote {
     padding-right: 100px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
     .welcome-quote {
         padding-left: 50px;
         padding-right: 50px;
@@ -161,23 +182,20 @@ u:hover {
     border-color: transparent;
 }
 
-.shadow {
-}
+/*.btn-no-outline {*/
+/*text-align: center;*/
+/*color: #000;*/
+/*box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);*/
 
-.btn-no-outline {
-    text-align: center;
-    color: #000;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+/*}*/
 
-}
+/*.btn-no-outline:hover {*/
+/*background-color: rgba(204, 204, 204, 0.15);*/
+/*}*/
 
-.btn-no-outline:hover {
-    background-color: rgba(204, 204, 204, 0.15);
-}
-
-.btn-no-outline:focus {
-    background-color: rgba(204, 204, 204, 0.25)
-}
+/*.btn-no-outline:focus {*/
+/*background-color: rgba(204, 204, 204, 0.25)*/
+/*}*/
 
 .align-container {
     /* Centers the text/buttons in the div vertically and horizontally */
@@ -186,9 +204,6 @@ u:hover {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-}
-
-.section.active {
 }
 
 .welcome-div {
@@ -222,7 +237,6 @@ u:hover {
     color: #fff;
 
     overflow: hidden;
-
 }
 
 .schools-div {
@@ -276,6 +290,8 @@ u:hover {
     outline: transparent solid 2px;
 
     border: 2px solid transparent;
+
+    -webkit-backface-visibility: hidden;
 }
 
 .hover:hover {
@@ -289,7 +305,7 @@ u:hover {
 
 }
 
-.hover:after {
+.hover::after {
     content: "";
     display: block;
     height: 100%;
@@ -310,7 +326,7 @@ u:hover {
     position: absolute;
 }
 
-.hover:hover:after {
+.hover:hover::after {
     opacity: 1;
 }
 
