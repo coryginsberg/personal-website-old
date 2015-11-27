@@ -7,9 +7,8 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll on narrow devices */
 
     /* Font Anti-Aliasing techniques */
-    -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit (possibly Edge as well, as Edge uses some webkit prefixes)*/
+    -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit on Mac*/
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
-    transform: rotate(-0.0000000001deg) /* Gives the font a slight CSS3 tilt to rotate jagged edges away from pixels. Used for 'cheating' Anti-Aliasing on Windows. */
 }
 
 body {
@@ -26,6 +25,21 @@ body {
     height: 200%;
     width: auto;
     margin: -10px auto;
+}
+
+@media screen and (min-width: 735px) {
+    .navbar {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .navbar {
+        bottom: 0;
+        margin-bottom: 0;
+        border-width: 1px 0 0;
+    }
 }
 
 h1 {
@@ -109,18 +123,6 @@ blockquote {
     line-height: 74px;
 }
 
-.welcome-quote {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-@media (max-width: 767px) {
-    .welcome-quote {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
 strong {
     color: #CE2020;
     font-weight: inherit;
@@ -158,24 +160,37 @@ u:hover {
     border-radius: 4px;
     border-color: transparent;
     color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn.raised, .btn:focus {
+    color: inherit;
     background-color: #CE2020;
     border-color: transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .btn:hover {
+    color: inherit;
     border-color: transparent;
-    background-color: #d32f2f;
 
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0.02s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    backface-visibility: hidden;
+}
+
+.btn:hover::after {
+    position: absolute;
+
 }
 
 .btn:active {
+    color: inherit;
     border-color: transparent;
     background-color: #f44336;
 
@@ -185,9 +200,29 @@ u:hover {
 }
 
 .btn.raised:active {
+    color: inherit;
     background-color: #f44336;
     border-color: transparent;
 }
+
+.grow {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    backface-visibility: hidden; /* Possibly reduces/removes blur when scaling on Chrome? */
+
+}
+
 
 /*.btn-no-outline {*/
 /*text-align: center;*/
@@ -214,6 +249,7 @@ u:hover {
 }
 
 .welcome-div {
+    padding-top: 50px;
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/welcome_bg.png') center;
     background-size: cover;
     height: 500px;
