@@ -20,21 +20,22 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <!--&lt;!&ndash; HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries &ndash;&gt;-->
-    <!--&lt;!&ndash; WARNING: Respond.js doesn't work if you view the page via file:// &ndash;&gt;-->
-    <!--&lt;!&ndash;[if lt IE 9]>-->
-    <!--<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
-    <!--<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <!--<![endif]&ndash;&gt;-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link href="css/main.css" rel="stylesheet">
 
-    <!--&lt;!&ndash; JQuery plug-in that allows the screen to scroll smoothly when user clicks on section header in the menu bar&ndash;&gt;-->
+    <!-- JQuery plug-in that allows the screen to scroll smoothly when user clicks on section header in the menu bar-->
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="javascript/smooth-scroll.js"></script>
 
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button"
@@ -52,18 +53,18 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home" onclick="$.scrollTo('#home', 750);">Home</a></li>
-            <li><a href="#about-me" onclick="$.scrollTo('#about-me', 750);">About</a></li>
-            <li><a href="#portfolio" onclick="$.scrollTo('#portfolio', 750);">Portfolio</a></li>
-            <li><a href="#contact" onclick="$.scrollTo('#contact', 750);">Contact</a></li>
+            <li><a id="homeBtn" href="#">Home</a></li>
+            <li><a id="aboutBtn" href="#about-me">About</a></li>
+            <li><a id="portBtn" href="#portfolio">Portfolio</a></li>
+            <li><a id="contactBtn" href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
     <div class="container-fluid">
-      <section id="home">
+      <section id="">
         <div class="row">
-          <div class="col-sm-12 welcome-div text-center align-container">
+          <div class="col-sm-12 welcome-div text-center">
             <h1 class="welcome-name">Hi,<br>I'm <strong>Cory Ginsberg.</strong></h1>
 
             <h3 class="welcome-subname"><em>Front-end developer from Chicago, IL.</em></h3>
@@ -72,12 +73,12 @@
               <!-- This div is used to allow the two buttons to be in the same column in the flexbox used to center the welcome-div -->
               <div class="col-xs-6">
                 <h4>
-                  <a class="btn raised btn-default shadow grow" style="float: right;" href="#">Resume</a>
+                  <a class="btn raised btn-default grow" style="float: right;" href="#">Resume</a>
                 </h4>
               </div>
               <div class="col-xs-6">
                 <h4>
-                  <a class="btn raised btn-default shadow grow" style="float: left;" href="#">Contact</a>
+                  <a class="btn raised btn-default grow" style="float: left;" href="#">Contact</a>
                 </h4>
               </div>
             </div>
@@ -86,7 +87,7 @@
       </section>
       <section id="about-me">
         <div class="no-background-div text-center align-container">
-          <h1>About <strong>Me.</strong></h1>
+          <h1>Some things about me.</h1>
 
           <p class="welcome-quote">My interest in programming started when I was young. I convinced my parents to get
             me an iPod Touch when I was just 12 years old, and I made my first app when I was just 15. Since then, I
@@ -95,7 +96,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="schools-div text-center shadow hover align-container div-padding">
-              <h3>My <strong>Education.</strong></h3>
+              <h2>My Education.</h2>
 
               <div class="row">
                 <div class="col-sm-6">
@@ -113,26 +114,32 @@
           </div>
           <div class="col-sm-6">
             <div class="languages-div shadow hover align-container div-padding">
-              <h2><strong>Languages</strong> I Know.</h2>
+              <h2>Languages I Know.</h2>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
             <div class="hobbies-div shadow hover align-container div-padding">
-              <h2>My <strong>Hobbies.</strong></h2>
+              <h2>My Hobbies.</h2>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="inspirations-div shadow hover align-container div-padding">
-              <h2>My <strong>Inspirations.</strong></h2>
+              <h2>My Inspirations.</h2>
             </div>
           </div>
         </div>
       </section>
       <section id="portfolio"> <!-- TODO: Implement Portfolio section -->
+        <div class="no-background-div text-center align-container">
+          <h1>See what I've made.</h1>
+        </div>
       </section>
       <section id="contact"> <!-- TODO: Implement Contact section -->
+        <div class="no-background-div text-center align-container">
+          <h1>Talk to me.</h1>
+        </div>
       </section>
     </div>
     <footer class="container-fluid">
