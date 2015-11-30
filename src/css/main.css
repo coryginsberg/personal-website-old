@@ -11,13 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
 }
 
-body {
-    padding-top: 50px;
-}
-
 .navbar {
     border-radius: 0;
     border-color: transparent;
+
 }
 
 .navbar-brand > img {
