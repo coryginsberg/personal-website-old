@@ -11,6 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
 }
 
+body {
+    padding-top: 50px;
+}
+
 .navbar {
     border-radius: 0;
     border-color: transparent;
@@ -139,10 +143,10 @@ u:hover {
 }
 
 .btn {
-    font-size: 1em;
-    border-radius: 0;
+    border-radius: 4px;
     border-color: transparent;
     color: white;
+
 
     -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,44 +154,41 @@ u:hover {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn, .btn:focus {
+.btn > h4 {
+    line-height: 8px;
+}
+
+.btn,
+.btn:focus {
     color: inherit;
     background-color: #CE2020;
     border-color: transparent;
-    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .btn:hover {
     color: inherit;
-    background-color: #F44336;
+    border-color: transparent;
+    background-color: #CE2020;
 
-    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
     backface-visibility: hidden;
-
-    border: #CCC solid 3px;
-
 }
 
 .btn:hover::after {
     position: absolute;
-
 }
 
-.btn:active {
+.btn:active,
+.btn:active:focus {
     color: inherit;
     border-color: transparent;
-    background-color: inherit;
+    background-color: #F44336;
 
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0.02s;
-    /*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.30);*/
-}
-
-.btn:active {
-    color: inherit;
-    background-color: inherit;
-    border-color: transparent;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.30);
 }
 
 .btn:disabled {
@@ -195,22 +196,21 @@ u:hover {
     background-color: #CCCCCC;
 }
 
-/*.grow {*/
-/*-webkit-transition: all .2s ease-in-out;*/
-/*-moz-transition: all .2s ease-in-out;*/
-/*-o-transition: all .2s ease-in-out;*/
-/*transition: all .2s ease-in-out;*/
-/*}*/
+.grow {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
-/*.grow:hover {*/
-/*-webkit-transform: scale(1.2);*/
-/*-moz-transform: scale(1.2);*/
-/*-ms-transform: scale(1.2);*/
-/*-o-transform: scale(1.2);*/
-/*transform: scale(1.2);*/
-/*backface-visibility: hidden; !* Possibly reduces/removes blur when scaling on Chrome? *!*/
-
-/*}*/
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    backface-visibility: hidden; /* Possibly reduces/removes blur when scaling on Chrome? */
+}
 
 
 /*.btn-no-outline {*/
