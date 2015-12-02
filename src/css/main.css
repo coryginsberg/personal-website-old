@@ -12,22 +12,27 @@ body {
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 .navbar {
+    height: 60px;
     border-radius: 0;
     border-color: transparent;
 
 }
 
-.navbar-brand > img {
-    max-height: 200%;
-    height: 200%;
-    width: auto;
-    margin: -10px auto;
+.navbar-brand {
+    margin: 5px auto;
 }
 
+.navbar-brand > span {
+    padding-left: 100px;
+}
+
+.navbar-right {
+    padding-right: 25px;
+}
 
 h1 {
     font-family: 'Open Sans', sans-serif;

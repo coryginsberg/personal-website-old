@@ -5,10 +5,6 @@
  * animate the scroll to the linked container.
  */
 $(function () {
-    $("#homeBtn").click(function (e) {
-        e.preventDefault(); // Used to prevent the screen from 'twitching'
-        $('html, body').animate({scrollTop: 0}, 'slow');
-    });
 
     $("#aboutBtn").click(function (e) {
         e.preventDefault();
