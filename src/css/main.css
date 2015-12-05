@@ -147,91 +147,6 @@ u:hover {
     margin-top: -10px;
 }
 
-/*.btn {*/
-/*border-radius: 4px;*/
-/*border-color: transparent;*/
-/*color: white;*/
-
-/*-webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*-moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*-o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*}*/
-
-/*.btn > h4 {*/
-/*line-height: 8px;*/
-/*}*/
-
-/*.btn,*/
-/*.btn:focus {*/
-/*color: inherit;*/
-/*background-color: #CE2020;*/
-/*border-color: transparent;*/
-/*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-/*}*/
-
-/*.btn:hover {*/
-/*color: inherit;*/
-/*border-color: transparent;*/
-/*background-color: #CE2020;*/
-
-/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
-
-/*backface-visibility: hidden;*/
-/*}*/
-
-/*.btn:hover::after {*/
-/*position: absolute;*/
-/*}*/
-
-/*.btn:active,*/
-/*.btn:active:focus {*/
-/*color: inherit;*/
-/*border-color: transparent;*/
-/*background-color: #F44336;*/
-
-/*transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);*/
-/*transition-delay: 0.02s;*/
-/*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.30);*/
-/*}*/
-
-/*.btn:disabled {*/
-/*color: #B4B4B4;*/
-/*background-color: #CCCCCC;*/
-/*}*/
-
-/*.grow {*/
-/*-webkit-transition: all .2s ease-in-out;*/
-/*-moz-transition: all .2s ease-in-out;*/
-/*-o-transition: all .2s ease-in-out;*/
-/*transition: all .2s ease-in-out;*/
-/*}*/
-
-/*.grow:hover {*/
-/*-webkit-transform: scale(1.2);*/
-/*-moz-transform: scale(1.2);*/
-/*-ms-transform: scale(1.2);*/
-/*-o-transform: scale(1.2);*/
-/*transform: scale(1.2);*/
-/*backface-visibility: hidden; !* Possibly reduces/removes blur when scaling on Chrome? *!*/
-/*}*/
-
-
-/*.btn-no-outline {*/
-/*text-align: center;*/
-/*color: #000;*/
-/*box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);*/
-
-/*}*/
-
-/*.btn-no-outline:hover {*/
-/*background-color: rgba(204, 204, 204, 0.15);*/
-/*}*/
-
-/*.btn-no-outline:focus {*/
-/*background-color: rgba(204, 204, 204, 0.25)*/
-/*}*/
-
 .align-container {
     /* Centers the text/buttons in the div vertically and horizontally */
     display: flex;
@@ -262,31 +177,43 @@ u:hover {
     margin-bottom: 30px;
 }
 
-#portfolio figure {
+figure {
     overflow: hidden;
     position: relative;
-    transition: all .5s ease;
+    transition: all .6s ease;
 
-    border: 5px solid #CCC;
+    border: 10px solid #CCC;
 }
 
-#portfolio figcaption {
+figcaption {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px 10px;
     width: 100%;
     bottom: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
 
-    -webkit-backdrop-filter: blur(20px);
+    /* Backdrop-filter is a new css filter allows you to apply effects such as blur, greyscale, hue-rotate, and others,
+       only instead of applying them to the element itself, they’re applied to whatever is behind the element.
+
+       Note: Backdrop-filter is not yet supported on any major browser except for Safari on iOS 9 and Mac OS 10.11
+       Chrome has support for backdrop-filter in the experimental web platform features flag but it is not default yet.\
+       IDK what is happening with Firefox and Edge with this flag, but I believe Mozilla will implement it soon. */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
-#portfolio figure:hover figcaption {
+figure:hover {
+
+}
+
+figure:hover figcaption {
     opacity: 0;
-    bottom: -15%;
+    bottom: -25%;
 }
 
 .section-header {
@@ -299,97 +226,3 @@ u:hover {
 
     overflow: hidden;
 }
-
-/*.schools-div {*/
-/*background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/DePaul_University.jpg') center;*/
-/*background-size: cover;*/
-/*position: relative;*/
-/*height: 400px;*/
-/*color: #fff;*/
-
-/*overflow: hidden;*/
-
-/*}*/
-
-/*.languages-div {*/
-/*background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg') center;*/
-/*background-size: cover;*/
-/*position: relative;*/
-/*height: 400px;*/
-/*color: #fff;*/
-
-/*overflow: hidden;*/
-
-/*}*/
-
-/*.hobbies-div {*/
-/*background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/swimming.png') center;*/
-/*background-size: cover;*/
-/*position: relative;*/
-/*height: 400px;*/
-/*color: #fff;*/
-
-/*overflow: hidden;*/
-
-/*}*/
-
-/*.inspirations-div {*/
-/*background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Steve Jobs.png') center;*/
-/*background-size: cover;*/
-/*position: relative;*/
-/*height: 400px;*/
-/*color: #fff;*/
-
-/*overflow: hidden;*/
-
-/*}*/
-
-/*.hover {*/
-/*transition: all .1s ease-in-out;*/
-/*overflow: hidden;*/
-
-/*outline: transparent solid 2px;*/
-
-/*-webkit-backface-visibility: hidden;*/
-
-/*border: 10px solid #FFF;*/
-/*}*/
-
-/*.hover:hover {*/
-/*opacity: 1;*/
-
-/*outline: #CCC solid 4px;*/
-
-/*background-color: rgba(0, 0, 0, 0.9);*/
-
-/*}*/
-
-/*.hover::after {*/
-/*content: "";*/
-/*display: block;*/
-/*height: 100%;*/
-/*width: 100%;*/
-/*opacity: 0;*/
-/*!* Radial Gradient is defined differently in all major web browsers, so this should cover (nearly) all of them. *!*/
-/*background: -o-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);*/
-/*background: -webkit-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);*/
-/*background: -moz-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); !* FF3.6+ *!*/
-/*background: -ms-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); !* IE10+ *!*/
-/*background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); !* W3C *!*/
-/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1); !* IE6-9 fallback on horizontal gradient *!*/
-/*-moz-transition: all 0.25s;*/
-/*-webkit-transition: all 0.25s;*/
-/*transition: all 0.25s;*/
-/*top: 0;*/
-/*left: 0;*/
-/*position: absolute;*/
-/*}*/
-
-/*.hover:hover::after {*/
-/*opacity: 1;*/
-/*}*/
-
-/*.hover h1, h2, h3, h4, h5, p {*/
-/*z-index: 1;*/
-/*position: relative;*/
-/*}*/
