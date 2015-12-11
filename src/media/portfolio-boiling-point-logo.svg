@@ -1,0 +1,28 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 286.5">
+    <defs>
+        <style>
+            .cls-1{fill:#333;}.cls-2{fill:url(#linear-gradient);}.cls-3,.cls-4{fill:none;}.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5px;}.cls-4{stroke:#fff;stroke-miterlimit:10;}
+        </style>
+        <linearGradient id="linear-gradient" x1="432.79" y1="286.95" x2="376.73" y2="318.51"
+                        gradientTransform="matrix(1, 0, 0, -1, -141, 419)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7e1416"/>
+            <stop offset="1" stop-color="#e71e25"/>
+        </linearGradient>
+    </defs>
+    <title>portfolio-boiling-point-logo</title>
+    <rect class="cls-1" width="510" height="286.5"/>
+    <path d="M257.15,237.82l-80.4-33.92s-17-6.28-11.31-20.1S265.95,22.37,265.95,22.37s6.91-10.68,21.36-7.54,46.48,10.68,46.48,10.68,17.59,0.63,10,23.24-62.19,182.16-62.19,182.16S277.25,247.24,257.15,237.82Z"/>
+    <g id="_Group_" data-name="&lt;Group&gt;">
+        <path class="cls-2"
+              d="M311.94,31.8l-56,140.14,0,0c4.57,7.9,5.45,16.88,1.48,24.33-6.81,12.75-25.21,16.16-41.1,7.61S193,178,199.81,165.26c4.54-8.5,14.19-12.82,24.84-12.25l-0.11-.07L295.06,26.64S307,21,311.94,31.8Z"/>
+        <path class="cls-3"
+              d="M255.91,171.94l56-140.14C307,21,295.06,26.64,295.06,26.64L224.54,153l0.11,0.07c-10.65-.57-20.3,3.74-24.84,12.25-6.81,12.75.56,30,16.44,38.57s34.29,5.13,41.1-7.61c4-7.45,3.09-16.42-1.48-24.33Z"/>
+    </g>
+    <line class="cls-4" x1="270.21" y1="159.08" x2="281.63" y2="163.23"/>
+    <line class="cls-4" x1="279.81" y1="136.45" x2="290.09" y2="140.19"/>
+    <line class="cls-4" x1="287.78" y1="114.1" x2="297.03" y2="117.47"/>
+    <line class="cls-4" x1="295.99" y1="93.3" x2="304.32" y2="96.33"/>
+    <line class="cls-4" x1="304.16" y1="72.8" x2="311.65" y2="75.53"/>
+    <line class="cls-4" x1="312.27" y1="53.86" x2="319.01" y2="56.32"/>
+    <line class="cls-4" x1="318.75" y1="37.08" x2="324.82" y2="39.3"/>
+</svg>
