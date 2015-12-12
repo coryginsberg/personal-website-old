@@ -147,8 +147,7 @@ u:hover {
     margin-top: -10px;
 }
 
-.align-container {
-    /* Centers the text/buttons in the div vertically and horizontally */
+.align-center { /* Centers the text/buttons in the div vertically and horizontally */
     display: flex;
     flex-direction: column;
     flex-flow: column;
@@ -166,7 +165,6 @@ u:hover {
     color: #fff;
 
 }
-
 
 .portfolio-image {
     display: inline-block;
@@ -213,10 +211,11 @@ figure:hover figcaption {
     background-size: cover;
     position: relative;
 
-    min-height: 300px;
-    max-height: 500px;
 
     overflow: hidden;
+
+    height: 150px;
+
 }
 
 #about-me {

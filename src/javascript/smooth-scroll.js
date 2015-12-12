@@ -6,18 +6,18 @@
  */
 $(function () {
 
-    $("#aboutBtn").click(function (e) {
-        e.preventDefault();
-        $.scrollTo($('#about-me'), 'slow');
-    });
-
     $("#portBtn").click(function (e) {
         e.preventDefault();
-        $.scrollTo($('#portfolio'), 'slow');
+        $.scrollTo($('#portfolio').offset().top - 50, 'slow');
+    });
+
+    $("#aboutBtn").click(function (e) {
+        e.preventDefault();
+        $.scrollTo($('#about-me').offset().top - 50, 'slow');
     });
 
     $("#contactBtn").click(function (e) {
         e.preventDefault();
-        $.scrollTo($('#contact'), 'slow');
+        $.scrollTo($('#contact').offset().top - 50, 'slow');
     });
 });
