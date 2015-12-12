@@ -221,3 +221,11 @@ figure:hover figcaption {
 #about-me {
     padding-bottom: 50px;
 }
+
+#languages {
+    line-height: 60px;
+}
+
+#languages > h5 {
+    padding-left: 25px;
+}
