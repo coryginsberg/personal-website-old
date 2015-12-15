@@ -12,13 +12,9 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic'
           rel='stylesheet'
           type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,10 +23,7 @@
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/main.css" rel="stylesheet">
-
-    <!-- JQuery plug-in that allows the screen to scroll smoothly when user clicks on section header in the menu bar-->
-    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="javascript/jquery.nav.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
   </head>
 
@@ -131,29 +124,105 @@
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <div class="align-container div-padding">
+            <div class="align-center div-padding">
               <h2>Hello!</h2>
               <h5>I'm a programmer at heart.</h5>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="div-padding" id="languages">
+            <div class="align-center div-padding" id="languages">
               <h2>Languages I Know.</h2>
-              <img src="media/Xcode_icon.png"><h5 style="display: inline;">Objective-C</h5><br>
-              <img src="media/Swift_logo.png"><h5 style="display: inline;">Swift</h5><br>
-              <img src="media/java-logo.png"><h5 style="display: inline;">Java</h5><br>
-              <img src="media/html5-logo.png"><h5 style="display: inline;">HTML</h5><br>
-              <img src="media/css-logo.png"><h5 style="display: inline;">CSS</h5><br>
-              <img src="media/js_logo.png"><h5 style="display: inline;">Javascript</h5>
+              <table>
+                <tr>
+                  <td align="center"><img src="media/Xcode_icon.png"></td>
+                  <td><h5>Objective-C</h5></td>
+                </tr>
+                <tr>
+                  <td align="center" width="100"><img src="media/Swift_logo.png"></td>
+                  <td><h5>Swift</h5></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="media/java-logo.png"></td>
+                  <td><h5>Java</h5></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="media/html5-logo.png"></td>
+                  <td><h5>Swift</h5></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="media/css-logo.png"></td>
+                  <td><h5>CSS</h5></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="media/js_logo.png"></td>
+                  <td><h5>Javascript</h5></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Me -->
-      <section id="contact"> <!-- TODO: Implement Contact section -->
+      <section id="contact">
         <div class="section-header align-center">
           <h1>Contact Me.</h1>
+        </div>
+        <div class="col-sm-12">
+          <div id="contact_form" class="row">
+            <div class="col-md-12">
+              <h2>Contact Us</h2>
+              <form role="form" id="feedbackForm">
+                <div class="form-group">
+                  <label class="control-label" for="name">Name *</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"/>
+                    <span class="input-group-addon"
+                          style="padding-left: 22px;"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+                  </div>
+                  <span class="help-block" style="display: none;">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="email">Email Address *</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"/>
+                    <span class="input-group-addon"
+                          style="padding-left: 22px;"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+                  </div>
+                  <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="message">Message *</label>
+                  <div class="input-group">
+                    <textarea rows="5"
+                              cols="30"
+                              class="form-control"
+                              id="message"
+                              name="message"
+                              placeholder="Enter your message"></textarea>
+                    <span class="input-group-addon"
+                          style="padding-left: 22px;"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+                  </div>
+                  <span class="help-block" style="display: none;">Please enter a message.</span>
+                </div>
+                <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LcVDRMTAAAAACk_3GJSPpUl5yTk9zd7Nc5TyQK4"></div>
+                  <span class="help-block" style="display: none;">Please check that you are not a robot.</span>
+                </div>
+                <span class="help-block" style="display: none;">Please enter a the security code.</span>
+                <button type="submit"
+                        id="feedbackSubmit"
+                        class="btn btn-primary btn-lg"
+                        data-loading-text="Sending..."
+                        style="display: block; margin-top: 10px;">Send Feedback
+                </button>
+              </form>
+            </div><!--/span-->
+          </div><!--/row-->
+          <hr>
         </div>
       </section>
     </div>
@@ -172,5 +241,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Javascript Files -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- JQuery plug-in that allows the screen to scroll smoothly when user clicks on section header in the menu bar-->
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="javascript/jquery.nav.js"></script>
+    <script type="text/javascript" src="javascript/contact-form.js"></script>
   </body>
 </html>
