@@ -225,7 +225,3 @@ figure:hover figcaption {
 #languages {
     line-height: 60px;
 }
-
-#languages > h5 {
-    padding-left: 25px;
-}
