@@ -9,6 +9,8 @@ body {
     /* Font Anti-Aliasing techniques */
     -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit on Mac*/
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
+    overflow: inherit;
+    padding-right: 0 !important;
 }
 
 body {
@@ -133,7 +135,7 @@ a:hover, a:focus {
 
 u {
     text-decoration: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 u:hover {
@@ -162,8 +164,12 @@ u:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/welcome_bg.png') center;
     background-size: cover;
     height: 435px;
-    color: #fff;
+    color: #FFFFFF;
 
+}
+
+button {
+    margin: -8px -15px;
 }
 
 .portfolio-image {
@@ -171,18 +177,17 @@ u:hover {
     margin-top: 30px;
 }
 
-figure {
+.portfolio-image > figure {
     overflow: hidden;
     position: relative;
     transition: all .6s ease;
-
-    border: 10px solid #CCC;
+    border: 10px solid #CCCCCC;
 }
 
-figcaption {
+.portfolio-image > figure > figcaption {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #FFFFFF;
     padding: 10px 10px;
     width: 100%;
     bottom: 0;
@@ -198,10 +203,10 @@ figcaption {
        Chrome has support for backdrop-filter in the experimental web platform features flag but it is not default yet.\
        IDK what is happening with Firefox and Edge with this flag, but I believe Mozilla will implement it soon. */
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
 }
 
-figure:hover figcaption {
+.portfolio-image > figure:hover figcaption {
     opacity: 0;
     bottom: -50%;
 }
@@ -210,12 +215,8 @@ figure:hover figcaption {
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
-
-
     overflow: hidden;
-
     height: 150px;
-
 }
 
 #about-me {
@@ -224,4 +225,39 @@ figure:hover figcaption {
 
 #languages {
     line-height: 60px;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.modal-header {
+
+    color: #FFFFFF;
+}
+
+.modal-content {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border: 10px solid #CCCCCC;
+}
+
+.btn-close {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.btn-default {
+    font-size: 18px;
+    background-color: #DDDDDD;
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+figure > * {
+    margin: 0 auto 0.55em;
+    display: block;
 }
