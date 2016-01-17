@@ -10,5 +10,6 @@
     <orderEntry type="library" name="respond" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery.scrollTo" level="application" />
+    <orderEntry type="library" name="api" level="application" />
   </component>
 </module>
