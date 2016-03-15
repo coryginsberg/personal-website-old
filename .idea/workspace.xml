@@ -984,7 +984,7 @@
       <workItem from="1456896053854" duration="117000" />
       <workItem from="1457662888145" duration="42000" />
       <workItem from="1457815082019" duration="26000" />
-      <workItem from="1458071122977" duration="299000" />
+      <workItem from="1458071122977" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Added a modal view for each of the images in the 'portfolio' section.&#10;Now, when the images are clicked on, a modal will appear giving more information about what I did with each job and a small showcase of what I did for them as well.&#10; There is a graphical bug with the images on index.html where there is an approximately 10px tall white space between the bottom of the image and the border. Not sure why this is happening but was worse when the links were &lt;button&gt; vs &lt;a&gt;. I will have to investigate this further later.">
       <created>1458071233520</created>
@@ -993,11 +993,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458071233520</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added a modal view for each of the images in the 'portfolio' section.&#10;Now, when the images are clicked on, a modal will appear giving more information about what I did with each job and a small showcase of what I did for them as well.&#10; There is a graphical bug with the images on index.html where there is an approximately 10px tall white space between the bottom of the image and the border. Not sure why this is happening but was worse when the links were &lt;button&gt; vs &lt;a&gt;. I will have to investigate this further later.">
+      <created>1458071425397</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1458071425397</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1947000" />
+    <option name="totallyTimeSpent" value="1968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
