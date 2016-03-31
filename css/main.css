@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body {
+    background-color: #F2F2F2;
+
+    overflow-x: hidden; /* Prevent horizontal scroll on narrow devices */
+
+    /* Font Anti-Aliasing techniques */
+    -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit on Mac*/
+    -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
+}
+
+body {
+    padding-top: 50px;
+}
+
+.navbar {
+    border-radius: 0;
+    border-color: transparent;
+
+}
+
+.navbar-brand > img {
+    max-height: 200%;
+    height: 200%;
+    width: auto;
+    margin: -10px auto;
+}
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+blockquote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.welcome-name {
+    font-size: 85px;
+    line-height: 90px;
+}
+
+.welcome-subname {
+    line-height: 74px;
+}
+
+strong {
+    color: #CE2020;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    color: #CE2020;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+u:hover {
+    color: #CE2020;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo {
+    height: 40px;
+    margin-top: -10px;
+}
+
+.btn {
+    border-radius: 4px;
+    border-color: transparent;
+    color: white;
+
+
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn > h4 {
+    line-height: 8px;
+}
+
+.btn,
+.btn:focus {
+    color: inherit;
+    background-color: #CE2020;
+    border-color: transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+    color: inherit;
+    border-color: transparent;
+    background-color: #CE2020;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    backface-visibility: hidden;
+}
+
+.btn:hover::after {
+    position: absolute;
+}
+
+.btn:active,
+.btn:active:focus {
+    color: inherit;
+    border-color: transparent;
+    background-color: #F44336;
+
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.02s;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.30);
+}
+
+.btn:disabled {
+    color: #B4B4B4;
+    background-color: #CCCCCC;
+}
+
+.grow {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    backface-visibility: hidden; /* Possibly reduces/removes blur when scaling on Chrome? */
+}
+
+
+/*.btn-no-outline {*/
+/*text-align: center;*/
+/*color: #000;*/
+/*box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);*/
+
+/*}*/
+
+/*.btn-no-outline:hover {*/
+/*background-color: rgba(204, 204, 204, 0.15);*/
+/*}*/
+
+/*.btn-no-outline:focus {*/
+/*background-color: rgba(204, 204, 204, 0.25)*/
+/*}*/
+
+.align-container {
+    /* Centers the text/buttons in the div vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-div {
+    padding-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../media/welcome_bg.png') center;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+
+    border-radius: 0;
+
+    margin-top: -20px;
+}
+
+.no-background-div {
+    min-height: 350px;
+    margin: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.div-padding {
+    margin-top: 30px;
+}
+
+.portfolio-div {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.schools-div {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/DePaul_University.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: #fff;
+
+    overflow: hidden;
+
+}
+
+.languages-div {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Computer-Programming-Sucks.jpg') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: #fff;
+
+    overflow: hidden;
+
+}
+
+.hobbies-div {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/swimming.png') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: #fff;
+
+    overflow: hidden;
+
+}
+
+.inspirations-div {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/Steve Jobs.png') center;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+    color: #fff;
+
+    overflow: hidden;
+
+}
+
+.hover {
+    transition: all .1s ease-in-out;
+    overflow: hidden;
+
+    outline: transparent solid 2px;
+
+    border: 2px solid transparent;
+
+    -webkit-backface-visibility: hidden;
+}
+
+.hover:hover {
+    opacity: 1;
+
+    outline: #CCC solid 4px;
+
+    border: 4px solid #FFF;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.hover::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* Radial Gradient is defined differently in all major web browsers, so this should cover (nearly) all of them. */
+    background: -o-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* FF3.6+ */
+    background: -ms-radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* IE10+ */
+    background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.hover:hover::after {
+    opacity: 1;
+}
+
+.hover h1, h2, h3, h4, h5, p {
+    z-index: 1;
+    position: relative;
+}

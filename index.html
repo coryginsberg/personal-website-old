@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Cory Ginsberg">
+    <title>Cory Ginsberg</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic'
+          rel='stylesheet'
+          type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- JQuery plug-in that allows the screen to scroll smoothly when user clicks on section header in the menu bar-->
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="javascript/smooth-scroll.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#navbar"
+                  aria-expanded="false"
+                  aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="logo" src="media/personal-logo.svg" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a id="homeBtn" href="#">Home</a></li>
+            <li><a id="aboutBtn" href="#about-me">About</a></li>
+            <li><a id="portBtn" href="#portfolio">Portfolio</a></li>
+            <li><a id="contactBtn" href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div class="container-fluid">
+      <section id="">
+        <div class="row">
+          <div class="col-sm-12 welcome-div text-center">
+            <h1 class="welcome-name">Hi,<br>I'm <strong>Cory Ginsberg.</strong></h1>
+
+            <h3 class="welcome-subname"><em>Front-end developer from Chicago, IL.</em></h3>
+
+            <div class="row">
+              <!-- This div is used to allow the two buttons to be in the same column in the flexbox used to center the welcome-div -->
+              <div class="col-xs-6">
+                <a class="btn raised btn-default grow" style="float: right;" href="#"><h4>Resume</h4></a>
+              </div>
+              <div class="col-xs-6">
+                <a class="btn raised btn-default grow" style="float: left;" href="#"><h4>Contact</h4></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-me">
+        <div class="no-background-div text-center align-container">
+          <h1>Some things about me.</h1>
+
+          <p class="welcome-quote">My interest in programming started when I was young. I convinced my parents to get
+            me an iPod Touch when I was just 12 years old, and I made my first app when I was just 15. Since then, I
+            have been learning and writing great, clean code for myself and for clients alike.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="schools-div text-center shadow hover align-container div-padding">
+              <h2>My Education.</h2>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>Vernon Hills High School</h3>
+                  <h4>2010 - 2014</h4>
+                  <h5><em>General Education</em></h5>
+                </div>
+                <div class="col-sm-6">
+                  <h3>DePaul University</h3>
+                  <h4>2014 - Present</h4>
+                  <h5><em>Computer Science</em></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="languages-div shadow hover align-container div-padding">
+              <h2>Languages I Know.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hobbies-div shadow hover align-container div-padding">
+              <h2>My Hobbies.</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="inspirations-div shadow hover align-container div-padding">
+              <h2>My Inspirations.</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio"> <!-- TODO: Implement Portfolio section -->
+        <div class="no-background-div text-center align-container">
+          <h1>See what I've made.</h1>
+        </div>
+      </section>
+      <section id="contact"> <!-- TODO: Implement Contact section -->
+        <div class="no-background-div text-center align-container">
+          <h1>Talk to me.</h1>
+        </div>
+      </section>
+    </div>
+    <footer class="container-fluid">
+      <div class="div-padding">
+        <div class="text-center">
+          <h1><img src="media/personal-logo.svg" style="width:125px; margin-right: 15px;" alt="">Cory Ginsberg.</h1>
+          <h4>Follow me on Twitter <a href="https://twitter.com/cory_ginsberg">@Cory_Ginsberg</a>.</h4>
+          <h4>Contact me at <a href="mailto:me@coryginsberg.com">me@coryginsberg.com</a>.</h4>
+          <h4>Download my resume <a href="#">here</a>.</h4>
+
+          <div id="legal navbar-inverse">
+            <h5>Copyright &copy; 2015 Cory Ginsberg. All rights reserved.</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
