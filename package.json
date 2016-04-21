@@ -1,11 +1,4 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "tsc"
-  }
-  "devDependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": ""
-  }
+  "version": "1.0.0"
 }
