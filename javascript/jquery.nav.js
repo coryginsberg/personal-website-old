@@ -8,16 +8,11 @@ $(function () {
 
     $("#portBtn").click(function (e) {
         e.preventDefault();
-        $.scrollTo($('#portfolio').offset().top - 50, 'slow');
+        $.scrollTo($('#portfolio').offset().top, 'slow');
     });
 
     $("#aboutBtn").click(function (e) {
         e.preventDefault();
-        $.scrollTo($('#about-me').offset().top - 50, 'slow');
-    });
-
-    $("#contactBtn").click(function (e) {
-        e.preventDefault();
-        $.scrollTo($('#contact').offset().top - 50, 'slow');
+        $.scrollTo($('#about-me').offset().top, 'slow');
     });
 });

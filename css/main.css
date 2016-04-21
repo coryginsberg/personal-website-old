@@ -77,14 +77,14 @@ h5 {
     line-height: 28px;
 }
 
-h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
+/*h6 {*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-size: 12px;*/
+/*font-style: normal;*/
+/*font-variant: normal;*/
+/*font-weight: 400;*/
+/*line-height: 26px;*/
+/*}*/
 
 p {
     font-family: 'Open Sans', sans-serif;
@@ -95,14 +95,14 @@ p {
     line-height: 26px;
 }
 
-blockquote {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 25px;
-}
+/*blockquote {*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-size: 18px;*/
+/*font-style: normal;*/
+/*font-variant: normal;*/
+/*font-weight: 400;*/
+/*line-height: 25px;*/
+/*}*/
 
 .welcome-name {
     font-size: 85px;
@@ -129,16 +129,16 @@ a:hover, a:focus {
     background-color: transparent;
 }
 
-u {
-    text-decoration: none;
-    border-bottom: 1px solid #FFFFFF;
-}
+/*u {*/
+/*text-decoration: none;*/
+/*border-bottom: 1px solid #FFFFFF;*/
+/*}*/
 
-u:hover {
-    color: #CE2020;
-    text-decoration: none;
-    background-color: transparent;
-}
+/*u:hover {*/
+/*color: #CE2020;*/
+/*text-decoration: none;*/
+/*background-color: transparent;*/
+/*}*/
 
 .logo {
     height: 40px;
@@ -162,7 +162,6 @@ u:hover {
     margin-top: -20px;
     height: 435px;
     color: #FFFFFF;
-
 }
 
 .portfolio-image {
@@ -173,7 +172,7 @@ u:hover {
     overflow: hidden;
     position: relative;
     transition: all .6s ease;
-    border: 10px solid #CCCCCC;
+    /*border: 10px solid #CCCCCC;*/
 }
 
 .portfolio-image > figure > figcaption {
@@ -194,12 +193,11 @@ u:hover {
        Note: Backdrop-filter is not yet supported on any major browser except for Safari on iOS 9 and Mac OS 10.11
        Chrome has support for backdrop-filter in the experimental web platform features flag but it is not default yet.\
        IDK what is happening with Firefox and Edge with this flag, but I believe Mozilla will implement it soon. */
-    -webkit-backdrop-filter: blur(10px);
+    /*-webkit-backdrop-filter: blur(10px);*/
     /*backdrop-filter: blur(10px);*/
 }
 
 .portfolio-image > figure:hover figcaption {
-    opacity: 0;
     bottom: -50%;
 }
 
@@ -249,7 +247,7 @@ u:hover {
     border-radius: 0;
 }
 
-figure > * {
+.modal figure > img {
     margin: 0 auto 0.55em;
     display: block;
 }
