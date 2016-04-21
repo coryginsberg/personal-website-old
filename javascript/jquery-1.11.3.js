@@ -680,19 +680,34 @@
 
             // Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
                 attributes = "\\[" + whitespace + "*(" + characterEncoding + ")(?:" + whitespace +
+<<<<<<< HEAD
                         // Operator (capture 2)
                     "*([*^$|!~]?=)" + whitespace +
                         // "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
+=======
+                    // Operator (capture 2)
+                    "*([*^$|!~]?=)" + whitespace +
+                    // "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                     "*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + whitespace +
                     "*\\]",
 
                 pseudos = ":(" + characterEncoding + ")(?:\\((" +
+<<<<<<< HEAD
                         // To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
                         // 1. quoted (capture 3; capture 4 or capture 5)
                     "('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
                         // 2. simple (capture 6)
                     "((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
                         // 3. anything else (capture 2)
+=======
+                    // To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
+                    // 1. quoted (capture 3; capture 4 or capture 5)
+                    "('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
+                    // 2. simple (capture 6)
+                    "((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
+                    // 3. anything else (capture 2)
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                     ".*" +
                     ")\\)|)",
 
@@ -1458,8 +1473,13 @@
 
                         // IE 9's matchesSelector returns false on disconnected nodes
                         if (ret || support.disconnectedMatch ||
+<<<<<<< HEAD
                                 // As well, disconnected nodes are said to be in a document
                                 // fragment in IE 9
+=======
+                            // As well, disconnected nodes are said to be in a document
+                            // fragment in IE 9
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                             elem.document && elem.document.nodeType !== 11) {
                             return ret;
                         }
@@ -1651,9 +1671,15 @@
 
                             // Strip excess characters from unquoted arguments
                         } else if (unquoted && rpseudo.test(unquoted) &&
+<<<<<<< HEAD
                                 // Get excess from tokenize (recursively)
                             (excess = tokenize(unquoted, true)) &&
                                 // advance to the next closing parenthesis
+=======
+                            // Get excess from tokenize (recursively)
+                            (excess = tokenize(unquoted, true)) &&
+                            // advance to the next closing parenthesis
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                             (excess = unquoted.indexOf(")", unquoted.length - excess) - unquoted.length)) {
 
                             // excess is a negative index
@@ -1762,7 +1788,11 @@
 
                                         while ((node = ++nodeIndex && node && node[dir] ||
 
+<<<<<<< HEAD
                                                 // Fallback to seeking `elem` from the start
+=======
+                                            // Fallback to seeking `elem` from the start
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                                             (diff = nodeIndex = 0) || start.pop())) {
 
                                             // When found, cache indexes on `parent` and break
@@ -1990,8 +2020,13 @@
                         return elem.nodeName.toLowerCase() === "input" &&
                             elem.type === "text" &&
 
+<<<<<<< HEAD
                                 // Support: IE<8
                                 // New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
+=======
+                            // Support: IE<8
+                            // New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                             ( (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === "text" );
                     },
 
@@ -4954,7 +4989,11 @@
             // by a handler lower down the tree; reflect the correct value.
             this.isDefaultPrevented = src.defaultPrevented ||
             src.defaultPrevented === undefined &&
+<<<<<<< HEAD
                 // Support: IE < 9, Android < 4.0
+=======
+            // Support: IE < 9, Android < 4.0
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
             src.returnValue === false ?
                 returnTrue :
                 returnFalse;
@@ -7841,7 +7880,11 @@
 
                         // oldIE doesn't update selected after form reset (#2551)
                         if (( option.selected || i === index ) &&
+<<<<<<< HEAD
                                 // Don't return options that are disabled or in a disabled optgroup
+=======
+                            // Don't return options that are disabled or in a disabled optgroup
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                             ( support.optDisabled ? !option.disabled : option.getAttribute("disabled") === null ) &&
                             ( !option.parentNode.disabled || !jQuery.nodeName(option.parentNode, "optgroup") )) {
 
@@ -9567,12 +9610,21 @@
             // XHR cannot access local files, always use ActiveX for that case
             return !this.isLocal &&
 
+<<<<<<< HEAD
                     // Support: IE7-8
                     // oldIE XHR does not support non-RFC2616 methods (#13240)
                     // See http://msdn.microsoft.com/en-us/library/ie/ms536648(v=vs.85).aspx
                     // and http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9
                     // Although this check for six methods instead of eight
                     // since IE also does not support "trace" and "connect"
+=======
+                // Support: IE7-8
+                // oldIE XHR does not support non-RFC2616 methods (#13240)
+                // See http://msdn.microsoft.com/en-us/library/ie/ms536648(v=vs.85).aspx
+                // and http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9
+                // Although this check for six methods instead of eight
+                // since IE also does not support "trace" and "connect"
+>>>>>>> bce2f2fb97a407ab9fe40b61e6c51a6c9e57993a
                 /^(get|post|head|put|delete|options)$/i.test(this.type) &&
 
                 createStandardXHR() || createActiveXHR();
