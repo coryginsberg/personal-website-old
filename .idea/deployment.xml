@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" uploadOnCheckin="5522feb8-6710-46df-8753-15241ced63f1">
+  <component name="PublishConfigData">
     <serverData>
       <paths name="Breathe EZ Website">
         <serverdata>
@@ -17,6 +17,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Personal Website" />
   </component>
 </project>

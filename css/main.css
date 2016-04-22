@@ -24,8 +24,14 @@ body {
     margin: 5px auto;
 }
 
-.navbar-brand > span {
+.navbar-brand {
     padding-left: 100px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand > span {
+        padding-left: calc(100% / 2);
+    }
 }
 
 .navbar-right {
@@ -77,15 +83,6 @@ h5 {
     line-height: 28px;
 }
 
-/*h6 {*/
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-size: 12px;*/
-/*font-style: normal;*/
-/*font-variant: normal;*/
-/*font-weight: 400;*/
-/*line-height: 26px;*/
-/*}*/
-
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -94,15 +91,6 @@ p {
     font-weight: 400;
     line-height: 26px;
 }
-
-/*blockquote {*/
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-size: 18px;*/
-/*font-style: normal;*/
-/*font-variant: normal;*/
-/*font-weight: 400;*/
-/*line-height: 25px;*/
-/*}*/
 
 .welcome-name {
     font-size: 85px;
@@ -128,17 +116,6 @@ a:hover, a:focus {
     text-decoration: underline;
     background-color: transparent;
 }
-
-/*u {*/
-/*text-decoration: none;*/
-/*border-bottom: 1px solid #FFFFFF;*/
-/*}*/
-
-/*u:hover {*/
-/*color: #CE2020;*/
-/*text-decoration: none;*/
-/*background-color: transparent;*/
-/*}*/
 
 .logo {
     height: 40px;
@@ -166,6 +143,8 @@ a:hover, a:focus {
 
 .portfolio-image {
     display: inline-block;
+    padding-bottom: 20px;
+
 }
 
 .portfolio-image > figure {
@@ -230,7 +209,6 @@ a:hover, a:focus {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
-    border: 10px solid #CCCCCC;
 }
 
 .btn-close {
