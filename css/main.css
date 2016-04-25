@@ -11,31 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
     overflow: inherit;
     padding-right: 0 !important;
-}
-
-.navbar {
-    height: 60px;
-    border-radius: 0;
-    border-color: transparent;
-
-}
-
-.navbar-brand {
-    margin: 5px auto;
-}
-
-.navbar-brand {
-    padding-left: 100px;
-}
-
-@media (max-width: 767px) {
-    .navbar-brand > span {
-        padding-left: calc(100% / 2);
-    }
-}
-
-.navbar-right {
-    padding-right: 25px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -44,7 +20,6 @@ h1 {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 52px;
 }
 
 h2 {
@@ -83,6 +58,15 @@ h5 {
     line-height: 28px;
 }
 
+/*h6 {*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-size: 12px;*/
+/*font-style: normal;*/
+/*font-variant: normal;*/
+/*font-weight: 400;*/
+/*line-height: 26px;*/
+/*}*/
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -91,6 +75,26 @@ p {
     font-weight: 400;
     line-height: 26px;
 }
+
+.navbar {
+    height: 60px;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    margin: 5px auto;
+}
+
+.navbar-brand {
+    padding-left: 100px;
+    font-weight: 400 !important;
+}
+
+.navbar-right {
+    padding-right: 25px;
+}
+
 
 .welcome-name {
     font-size: 85px;
@@ -144,7 +148,6 @@ a:hover, a:focus {
 .portfolio-image {
     display: inline-block;
     padding-bottom: 20px;
-
 }
 
 .portfolio-image > figure {
