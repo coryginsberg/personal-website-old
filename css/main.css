@@ -11,6 +11,8 @@ body {
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
     overflow: inherit;
     padding-right: 0 !important;
+    position: relative;
+
 }
 
 .navbar {

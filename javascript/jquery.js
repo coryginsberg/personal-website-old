@@ -15,4 +15,17 @@ $(function () {
         e.preventDefault();
         $.scrollTo($('#about-me').offset().top, 'slow');
     });
+
+    $("assuranceModal").click(function () {
+        $("assuranceModal").modal('show');
+    });
+
+    $("breathEZModal").click(function () {
+        $("breathEZModal").modal('show');
+    });
+
+    $("boilingPointModal").click(function () {
+        $("boilingPointModal").modal('show');
+    })
+
 });
