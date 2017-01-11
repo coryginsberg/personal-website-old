@@ -7,12 +7,12 @@
 $(function () {
 
     $("#portBtn").click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $.scrollTo($('#portfolio').offset().top, 'slow');
     });
 
     $("#aboutBtn").click(function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $.scrollTo($('#about-me').offset().top, 'slow');
     });
 
