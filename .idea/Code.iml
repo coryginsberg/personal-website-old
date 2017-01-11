@@ -12,5 +12,8 @@
     <orderEntry type="library" name="jquery-ui" level="application" />
     <orderEntry type="library" name="jquery.scrollTo" level="application" />
     <orderEntry type="library" name="personal-website node_modules" level="project" />
+    <orderEntry type="library" name="jquery-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>
