@@ -3,9 +3,8 @@
 html,
 body {
     background-color: #F2F2F2;
-
     overflow-x: hidden; /* Prevent horizontal scroll on narrow devices */
-
+    /*font-family: "Open Sans", sans-serif;*/
     /* Font Anti-Aliasing techniques */
     -webkit-font-smoothing: subpixel-antialiased; /* Safari/Webkit on Mac*/
     -moz-osx-font-smoothing: grayscale; /* Firefox 25+ for Mac */
@@ -41,7 +40,6 @@ body {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
     font-style: normal;
     font-variant: normal;
@@ -50,7 +48,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-variant: normal;
@@ -59,7 +56,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-style: normal;
     font-variant: normal;
@@ -68,7 +64,6 @@ h3 {
 }
 
 h4 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-variant: normal;
@@ -77,7 +72,6 @@ h4 {
 }
 
 h5 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-variant: normal;
@@ -86,7 +80,6 @@ h5 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-variant: normal;
